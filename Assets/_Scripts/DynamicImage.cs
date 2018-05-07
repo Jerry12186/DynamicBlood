@@ -36,7 +36,7 @@ public class DynamicImage : MonoBehaviour
             (v) => img.fillAmount = v,
             pos,
             time
-            ).OnComplete(
+            ).SetEase(Ease.InOutSine).OnComplete(
                 () => 
                 {
                     bPlaying = false;
