@@ -25,7 +25,7 @@ public class DynamicNumber
                 (v) => text.text = v.ToString("0"),
                 int.Parse(text.text) + addNum,
                 1
-            ).SetEase(Ease.InOutSine).OnComplete(
+            ).SetEase(Ease.OutSine).OnComplete(
                 () =>
                 {
                     bPlaying = false;
